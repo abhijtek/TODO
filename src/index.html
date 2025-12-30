@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<style>
+    .completed{
+        text-decoration: line-through;
+    }
+</style>
+<body class="bg-gray-900 min-h-screen flex justify-center items-center">
+    <div class="container flex justify-center items-center flex-col border-2 bg-gray-500 max-w-80 p-2 rounded-2xl">
+        <h1 class="text-white p-2 text-2xl font-bold font-mono">To Do List</h1>
+        <div class="input-container mb-1.5">
+            <input type="text" class="rounded-2xl p-4 text-amber-50 bg-gray-700" id = "todo-input" placeholder="add a new task">
+            <button class = "bg-red-500 text-gray-950 p-2 py-4 rounded-2xl" id = "add-task-btn">Add Task</button>
+        </div>
+        <ul id ="todo-list">
+  
+        </ul>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
